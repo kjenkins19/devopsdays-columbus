@@ -32,16 +32,16 @@ class App extends Component {
 				</Slide>
 				<Slide type="more-info">
 					<h3 className="section-title">Where can I find more information?</h3>
-					<p className="copy">All details, schedules, presenters and abstracts are available on the <a href="#">primary information website</a>
+					<p className="copy">All details, schedules, presenters and abstracts are available on the <a href="https://www.devopsdays.org/">primary information website</a>
 					</p>
 				</Slide>
-				<header className="App-header">
-					<img src={logo} className="App-logo" alt="logo"/>
-					<h1 className="App-title">Welcome to React</h1>
-				</header>
-				<p className="App-intro">
-					To get started, edit <code>src/App.js</code> and save to reload.
-				</p>
+				{/*<header className="App-header">*/}
+					{/*<img src={logo} className="App-logo" alt="logo"/>*/}
+					{/*<h1 className="App-title">Welcome to React</h1>*/}
+				{/*</header>*/}
+				{/*<p className="App-intro">*/}
+					{/*To get started, edit <code>src/App.js</code> and save to reload.*/}
+				{/*</p>*/}
 			</div>
 		);
 	}

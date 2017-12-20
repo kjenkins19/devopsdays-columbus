@@ -1,4 +1,10 @@
 $images: "./images/";
+$primary-color: #074b73; //text white
+$primary-color-light: #4576a2; //text white
+$primary-color-dark: #002447; //text white
+$secondary-color: #b0bec5; //text black
+$secondary-color-light: #e2f1f8; //text black
+$secondary-color-dark: #808e95; //text black
 
 /*
 font-family: 'Lobster', cursive;
@@ -23,15 +29,15 @@ font-family: 'Spectral', serif;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
-	min-height: 80vh;
+	min-height: 60vh;
 	padding: 20px;
 	text-align: center;
 
 	&:nth-of-type(even) {
 		background-color: white;
-		color: black;
+		color: $primary-color;
 		a {
-			color: black;
+			color: $primary-color-dark;
 		}
 	}
 	&:nth-of-type(odd) {
@@ -51,7 +57,7 @@ font-family: 'Spectral', serif;
 	}
 
 	&:nth-of-type(3), &:nth-of-type(5) {
-		background-color: #074B73;
+		background-color: $primary-color-light;
 	}
 
 	@include tablet {

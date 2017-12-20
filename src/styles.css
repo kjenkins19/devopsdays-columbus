@@ -13,14 +13,14 @@ font-family: 'Spectral', serif;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  min-height: 80vh;
+  min-height: 60vh;
   padding: 20px;
   text-align: center; }
   .slide:nth-of-type(even) {
     background-color: white;
-    color: black; }
+    color: #074b73; }
     .slide:nth-of-type(even) a {
-      color: black; }
+      color: #002447; }
   .slide:nth-of-type(odd) {
     color: white; }
     .slide:nth-of-type(odd) a {
@@ -33,7 +33,7 @@ font-family: 'Spectral', serif;
     background-repeat: no-repeat;
     background-size: cover; }
   .slide:nth-of-type(3), .slide:nth-of-type(5) {
-    background-color: #074B73; }
+    background-color: #4576a2; }
   @media screen and (min-width: 700px) {
     .slide {
       padding: 40px; } }
