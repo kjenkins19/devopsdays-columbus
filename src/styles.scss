@@ -1,0 +1,90 @@
+$images: "./images/";
+
+/*
+font-family: 'Lobster', cursive;
+font-family: 'Open Sans', sans-serif;
+font-family: 'Spectral', serif;
+*/
+
+@mixin tablet() {
+	@media screen and (min-width: 700px) {
+		@content;
+	}
+}
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+.slide {
+	color: white;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	min-height: 80vh;
+	padding: 20px;
+	text-align: center;
+
+	&:nth-of-type(even) {
+		background-color: white;
+		color: black;
+		a {
+			color: black;
+		}
+	}
+	&:nth-of-type(odd) {
+		color: white;
+		a {
+			color: white;
+		}
+	}
+
+	&:nth-of-type(1) {
+		background-attachment: fixed;
+		background-color: black;
+		background-image: url($images + "bluestone-2015-dark.jpg");
+		background-position: center top;
+		background-repeat: no-repeat;
+		background-size: cover;
+	}
+
+	&:nth-of-type(3), &:nth-of-type(5) {
+		background-color: #074B73;
+	}
+
+	@include tablet {
+		padding: 40px;
+	}
+}
+
+.main-title {
+	font-family: 'Lobster', cursive;
+	font-size: 50px;
+	text-shadow: 0 0 5px black;
+
+	@include tablet() {
+		font-size: 70px;
+	}
+}
+
+.dates, .where {
+	margin-top: 20px;
+	text-shadow: 0 0 5px black;
+
+	@include tablet() {
+		font-size: 30px;
+	}
+}
+
+.section-title {
+	font-family: 'Spectral', serif;
+	font-size: 30px;
+	line-height: 1.3em;
+}
+
+.copy {
+	font-family: 'Open Sans', sans-serif;
+	margin-top: 20px;
+}
